@@ -1,5 +1,4 @@
-import Header from "./components/Header/Header";
-import Main from "./components/PostsMain/Main";
+import MainPage from "./Pages/MainPage";
 import Global from "./styles/global";
 
 
@@ -7,8 +6,7 @@ function App() {
   return (
     <div>
       <Global/>
-      <Header/>
-      <Main/>
+      <MainPage/>
     </div>
   );
 }

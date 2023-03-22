@@ -60,13 +60,13 @@ export default createGlobalStyle`
   }
   /* Track */
   ::-webkit-scrollbar-track {
-    background: var(--color-background);
+    background: transparent;
     margin: 1rem;
     border-radius: 1.6rem;
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color-primary-50);
+    background: var(--color-grey-100);
     border-radius: 1.6rem;
   }
   /* Handle on hover */

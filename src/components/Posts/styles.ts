@@ -56,10 +56,13 @@ export const CardPost = styled.article`
         padding: 5px;
     }
 
-    h2{
+    #name{
         font-size: 1rem;
         color: var(--color-secondary);
-
+        background-color: transparent;
+        border: none;
+        width: 130px;
+        padding: 0;
     }
 
     h3{
@@ -69,10 +72,13 @@ export const CardPost = styled.article`
     h4{
         display: none;
     }
-    h5{
+    #comment{
         font-size: 0.8rem;
         color: var(--color-grey-50);
-
+        background-color: transparent;
+        border: none;
+        width: 180px;
+        padding: 0;
     }
 
 
