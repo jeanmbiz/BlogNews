@@ -1,3 +1,5 @@
+import {ReactNode} from 'react'
+
 export interface iPost{
     userId: number,
     id: number,
@@ -43,3 +45,9 @@ export interface iCompany{
     catchPhrase: string,
     bs: string
 }
+
+
+export interface iChildrenProps {
+    children: ReactNode;
+  }
+  

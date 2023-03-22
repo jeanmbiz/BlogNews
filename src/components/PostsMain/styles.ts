@@ -25,13 +25,14 @@ export const MainStyled = styled.main`
         display: flex;
         flex-direction: column;
         gap: 10px;
+        
     }
 
     @media screen and (min-width: 560px) {
     }
 `
 
-export const ArticleStyled = styled.article`
+export const CardPost = styled.article`
     border: 3px solid var(--color-grey-100);
     border-radius: 10px;
     display: flex;

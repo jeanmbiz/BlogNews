@@ -1,24 +1,17 @@
-import { useEffect, useState } from 'react'
-import { iPost } from '../../interfaces/Interfaces'
-import api from '../../services/api'
-import { ArticleStyled, MainStyled, PostIConStyled } from './styles'
+import { useContext } from 'react'
+import PostContext from '../../Providers/Context/PostContext'
+import { CardPost, MainStyled, PostIConStyled } from './styles'
 
 
 
 const Main = () => {
-
-  const [postList, setPostList] = useState<iPost[]>([])
-
-  useEffect(()=> {
-    api.get('/posts').then(res => setPostList(res.data))
-    .catch(error => console.log(error))
-  },[])
-
+  const { postList } = useContext(PostContext)
 
   return (
     <>
     <MainStyled>
     <>
+
       
         <section>
         <>
@@ -26,7 +19,7 @@ const Main = () => {
       {
         postList.map(post => (
 
-          <ArticleStyled>
+          <CardPost key={post.id} >
           <div>
               <PostIConStyled/>
           </div>
@@ -36,12 +29,12 @@ const Main = () => {
           <h4> {post.body} </h4>
           <h5>Ver conteúdo e comentários</h5>
           </summary>
-      </ArticleStyled>
+      </CardPost>
 
         ))  
       }
 
-            <ArticleStyled>
+            <CardPost>
                 <div>
                     <PostIConStyled/>
                 </div>
@@ -51,7 +44,7 @@ const Main = () => {
                 <h4>quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</h4>
                 <h5>Ver conteúdo e comentários</h5>
                 </summary>
-            </ArticleStyled>
+            </CardPost>
             </>
         </section>
         </>
