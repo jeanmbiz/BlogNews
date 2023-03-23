@@ -1,8 +1,8 @@
-import { CommentCardStyled, PostIcon, SectionStyled, UserIcon } from "./styles";
+import { CommentCardStyled,  MainCommentStyled,  PostIcon, SectionStyled, UserIcon } from "./styles";
 
 const PostComments = () => {
   return (
-    <main>
+    <MainCommentStyled>
       <SectionStyled>
         <article>
           <h1>
@@ -26,47 +26,66 @@ const PostComments = () => {
 
           <CommentCardStyled>
             <span>
-              <UserIcon/>
+              <UserIcon />
               <a href="mailto:jeanmbiz@hotmail.com">Jean Michel Biz</a>
             </span>
-            <h4>non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati</h4>
+            <h4>
+              non et atque\noccaecati deserunt quas accusantium unde odit nobis
+              qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui
+              rerum deleniti ut occaecati
+            </h4>
           </CommentCardStyled>
 
           <CommentCardStyled>
             <span>
-              <UserIcon/>
+              <UserIcon />
               <a href="mailto:jeanmbiz@hotmail.com">Jean Michel Biz</a>
             </span>
-            <h4>non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati</h4>
+            <h4>
+              non et atque\noccaecati deserunt quas accusantium unde odit nobis
+              qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui
+              rerum deleniti ut occaecati
+            </h4>
           </CommentCardStyled>
 
           <CommentCardStyled>
             <span>
-              <UserIcon/>
+              <UserIcon />
               <a href="mailto:jeanmbiz@hotmail.com">Jean Michel Biz</a>
             </span>
-            <h4>non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati</h4>
+            <h4>
+              non et atque\noccaecati deserunt quas accusantium unde odit nobis
+              qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui
+              rerum deleniti ut occaecati
+            </h4>
           </CommentCardStyled>
 
           <CommentCardStyled>
             <span>
-              <UserIcon/>
+              <UserIcon />
               <a href="mailto:jeanmbiz@hotmail.com">Jean Michel Biz</a>
             </span>
-            <h4>non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati</h4>
+            <h4>
+              non et atque\noccaecati deserunt quas accusantium unde odit nobis
+              qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui
+              rerum deleniti ut occaecati
+            </h4>
           </CommentCardStyled>
 
           <CommentCardStyled>
             <span>
-              <UserIcon/>
+              <UserIcon />
               <a href="mailto:jeanmbiz@hotmail.com">Jean Michel Biz</a>
             </span>
-            <h4>non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati</h4>
+            <h4>
+              non et atque\noccaecati deserunt quas accusantium unde odit nobis
+              qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui
+              rerum deleniti ut occaecati
+            </h4>
           </CommentCardStyled>
-
         </section>
       </SectionStyled>
-    </main>
+    </MainCommentStyled>
   );
 };
 

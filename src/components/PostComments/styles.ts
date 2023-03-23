@@ -2,6 +2,13 @@ import styled from "styled-components";
 import { FaUserCircle } from "react-icons/fa";
 import { MdLocalPostOffice } from "react-icons/md";
 
+export const MainCommentStyled = styled.main`
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+`
+
+
 export const SectionStyled = styled.section`
   article {
     h1 {
