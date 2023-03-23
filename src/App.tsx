@@ -1,5 +1,6 @@
 import CommentsPage from "./Pages/CommentsPage";
 import MainPage from "./Pages/MainPage";
+import UserPage from "./Pages/UserPage";
 import Global from "./styles/global";
 
 
@@ -8,7 +9,8 @@ function App() {
     <div>
       <Global/>
       {/* <MainPage/> */}
-      <CommentsPage/>
+      {/* <CommentsPage/> */}
+      <UserPage/>
     </div>
   );
 }
