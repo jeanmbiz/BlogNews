@@ -1,10 +1,11 @@
-import React from 'react'
+import { IconLoader, LoaderStyled } from "./styles"
+
 
 const Loader = () => {
   return (
-    <div>
-      Loading...
-    </div>
+    <LoaderStyled>
+      <IconLoader/>
+    </LoaderStyled>
   )
 }
 
