@@ -11,6 +11,7 @@ export const MainCommentStyled = styled.main`
 
 export const SectionStyled = styled.section`
   article {
+    padding: 0px 10px;
     h1 {
       font-size: 2rem;
       margin: 1.5rem 0;
@@ -40,6 +41,7 @@ export const SectionStyled = styled.section`
       box-sizing: border-box;
       align-items: center;
       width: 100%;
+      padding: 0px 10px;
     }
 
     div:nth-of-type(2) {
@@ -48,6 +50,7 @@ export const SectionStyled = styled.section`
       color: var(--color-sucess);
       margin: 20px 0;
       text-align: left;
+      padding: 0px 10px;
     }
   }
 `;

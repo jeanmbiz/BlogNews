@@ -2,6 +2,7 @@ import { CommentCardStyled,  MainCommentStyled,  PostIcon, SectionStyled, UserIc
 
 const PostComments = () => {
   return (
+    
     <MainCommentStyled>
       <SectionStyled>
         <article>

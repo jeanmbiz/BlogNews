@@ -56,6 +56,7 @@ export const MainUserStyled = styled.main`
     section{
         display: flex;
         flex-direction: row;
+        padding: 0px 10px;
     }
     span{
         display: flex;
