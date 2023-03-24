@@ -6,7 +6,11 @@ export const MainCommentStyled = styled.main`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: var(--color-white);
+    padding-top: 20px;
+    height: 90vh;
 `
+
 
 
 export const SectionStyled = styled.section`
@@ -14,7 +18,6 @@ export const SectionStyled = styled.section`
     padding: 0px 10px;
     h1 {
       font-size: 2rem;
-      margin: 1.5rem 0;
       font-weight: 700;
       line-height: 120%;
       letter-spacing: -0.2px;

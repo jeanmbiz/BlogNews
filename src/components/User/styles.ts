@@ -6,8 +6,10 @@ import { MdEmail } from "react-icons/md";
 export const MainUserStyled = styled.main`
   width: 100%;
   max-width: 1000px;
+  height: 90vh;
   margin: 0 auto;
-  margin-top: 20px;
+  background-color: var(--color-white);
+  padding-top: 20px;
 
   figure {
     display: flex;
