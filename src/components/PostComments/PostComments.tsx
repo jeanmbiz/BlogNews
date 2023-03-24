@@ -32,7 +32,10 @@ const PostComments = () => {
           <>
             <div>
               <PostIcon />
-              <h1>by {postCommentsById?.user.name}</h1>
+              <Link to={`/user/${postCommentsById?.userId}`}>
+                {" "}
+                by {postCommentsById?.user.name}{" "}
+              </Link>
             </div>
             <div>
               <h2>Comentários da Comunidade</h2>
@@ -48,18 +51,6 @@ const PostComments = () => {
                   <h4>{comment.body}</h4>
                 </CommentCardStyled>
               ))}
-
-            {/* <CommentCardStyled>
-            <span>
-              <UserIcon />
-              <a href="mailto:jeanmbiz@hotmail.com">Jean Michel Biz</a>
-            </span>
-            <h4>
-              non et atque\noccaecati deserunt quas accusantium unde odit nobis
-              qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui
-              rerum deleniti ut occaecati
-            </h4>
-          </CommentCardStyled> */}
           </>
         </section>
       </SectionStyled>

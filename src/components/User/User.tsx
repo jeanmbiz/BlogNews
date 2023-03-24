@@ -36,7 +36,7 @@ const User = () => {
       <aside>
         <h2>SOBRE</h2>
         <h3>
-          {user?.name} , trabalha na empresa {user?.company.name} , mora na Rua{" "}
+          {user?.name}, trabalha na empresa {user?.company.name} , mora na{" "}
           {user?.address.street}, {user?.address.suite} na cidade de{" "}
           {user?.address.city} com CEP {user?.address.zipcode}.
         </h3>
