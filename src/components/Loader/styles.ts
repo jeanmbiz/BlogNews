@@ -7,6 +7,7 @@ export const LoaderStyled = styled.div`
   align-items: center;
   height: 100%;
   animation: spin 1s linear infinite;
+  height: 90vh;
 
   @keyframes spin {
     0% {
