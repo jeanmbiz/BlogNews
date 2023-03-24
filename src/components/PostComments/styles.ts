@@ -8,7 +8,7 @@ export const MainCommentStyled = styled.main`
     margin: 0 auto;
     background-color: var(--color-white);
     padding-top: 20px;
-    height: 90vh;
+    height: 100%;
 `
 
 
