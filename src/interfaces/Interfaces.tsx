@@ -1,13 +1,14 @@
 import {ReactNode} from 'react'
 
+
 export interface iPost{
     userId: number,
     id: number,
     title: string,
     body: string
     user: iUser
+    comments: iComments[]
 }
-
 
 export interface iComments{
     postId: number,
@@ -22,10 +23,10 @@ export interface iUser{
     name: string,
     username: string,
     email: string,
-    address: iAdressUser[],
+    address: iAdressUser,
     phone: string,
     website: string,
-    company: iCompany[]
+    company: iCompany
 }
 
 export interface iAdressUser{

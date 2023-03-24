@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Posts = () => {
   const { postList } = useContext(PostContext)
 
-  // postList.map(post => console.log(post.user))
+
 
 
   return (
@@ -29,10 +29,11 @@ const Posts = () => {
                     <PostIConStyled/>
                 </div>
                 <summary>
-                <button id='name' onClick={()=> console.log(`userId: ${post.userId} `)}> {post.user.name} </button>
+                <Link to={`/user/${post.userId}`}> {post.user.name} </Link>
+  
                 <h3>título: sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h3>
                 <h4>quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</h4>
-                <button id='comment' onClick={()=> console.log(`commentId: ${post.id} `)} >Ver conteúdo e comentários</button>
+                <Link to={`/posts/${post.id}/comments`} >Ver conteúdo e comentários</Link>
                 </summary>
             </CardPost>
 

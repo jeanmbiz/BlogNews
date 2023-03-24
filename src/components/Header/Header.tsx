@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { HeaderHouseStyled, HeaderStyled } from "./styles"
 
 const Header = () => {
@@ -5,7 +6,9 @@ const Header = () => {
     <HeaderStyled>
     <div className="mainContainer">
       <section>
+        <Link to={'/'}>
         <HeaderHouseStyled/>
+        </Link>
       </section>
       <div>
         <input
