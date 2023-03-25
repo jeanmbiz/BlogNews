@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsFillHouseDoorFill } from 'react-icons/bs'
+import { BsFillHouseDoorFill } from "react-icons/bs";
 
 export const HeaderHouseStyled = styled(BsFillHouseDoorFill)`
   color: var(--color-white);
@@ -9,7 +9,7 @@ export const HeaderHouseStyled = styled(BsFillHouseDoorFill)`
   width: 70px;
   padding: 5px;
   height: 50px;
-`
+`;
 
 export const HeaderStyled = styled.header`
   background-color: var(--color-primary);
@@ -60,8 +60,6 @@ export const HeaderStyled = styled.header`
       }
     }
   }
-
-  
 
   @media screen and (max-width: 560px) {
     .mainContainer {

@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { iPost } from "../../interfaces/Interfaces";
 import api from "../../services/api";
 import Loader from "../Loader/Loader";
 import {
   CommentCardStyled,
+  LinkComments,
+  LinkUser,
   MainCommentStyled,
   PostIcon,
   SectionStyled,
@@ -40,10 +42,10 @@ const PostComments = () => {
             <>
               <div>
                 <PostIcon />
-                <Link to={`/user/${postCommentsById?.userId}`}>
+                <LinkUser to={`/user/${postCommentsById?.userId}`}>
                   {" "}
                   by {postCommentsById?.user.name}{" "}
-                </Link>
+                </LinkUser>
               </div>
               <div>
                 <h2>Comentários da Comunidade</h2>
@@ -54,10 +56,10 @@ const PostComments = () => {
                   <CommentCardStyled key={comment.id}>
                     <span>
                       <UserIcon />
-                      <Link to={`mailto:${comment.email}`}>
+                      <LinkComments to={`mailto:${comment.email}`}>
                         {" "}
                         {comment.name}{" "}
-                      </Link>
+                      </LinkComments>
                     </span>
                     <h4>{comment.body}</h4>
                   </CommentCardStyled>

@@ -5,7 +5,8 @@ export default createGlobalStyle`
     --color-primary: #FD377E;
     --color-primary-2: #E34981;
   
-    --color-secondary: #03B898;
+    --color-secondary: #03B898;    
+    --color-link: #120a8f;;
 
     --color-grey-100: #333333;
     --color-grey-50: #828282;
@@ -17,7 +18,6 @@ export default createGlobalStyle`
     --color-negative: #E60000;
     --color-warning: #FFCD07; 
     --color-sucess: #168821;
-
   }
   
   * {

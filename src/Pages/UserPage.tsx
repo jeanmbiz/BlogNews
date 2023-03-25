@@ -1,15 +1,13 @@
-
-import Header from '../components/Header/Header'
-import User from '../components/User/User'
+import Header from "../components/Header/Header";
+import User from "../components/User/User";
 
 const UserPage = () => {
-
   return (
     <div>
-        <Header/>
-        <User/>
+      <Header />
+      <User />
     </div>
-  )
-}
+  );
+};
 
-export default UserPage
+export default UserPage;

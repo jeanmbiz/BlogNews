@@ -1,14 +1,8 @@
-import { iChildrenProps } from '../interfaces/Interfaces'
-import { PostProvider } from './Context/PostContext'
+import { iChildrenProps } from "../interfaces/Interfaces";
+import { PostProvider } from "./Context/PostContext";
 
+const Providers = ({ children }: iChildrenProps) => {
+  return <PostProvider>{children}</PostProvider>;
+};
 
-
-const Providers = ({children}: iChildrenProps) => {
-  return (
-    <PostProvider>
-        {children}
-    </PostProvider>
-  )
-}
-
-export default Providers
+export default Providers;

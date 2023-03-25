@@ -1,25 +1,22 @@
-import { Link } from "react-router-dom"
-import { HeaderHouseStyled, HeaderStyled } from "./styles"
+import { Link } from "react-router-dom";
+import { HeaderHouseStyled, HeaderStyled } from "./styles";
 
 const Header = () => {
   return (
     <HeaderStyled>
-    <div className="mainContainer">
-      <section>
-        <Link to={'/'}>
-        <HeaderHouseStyled/>
-        </Link>
-      </section>
-      <div>
-        <input
-          type="text"
-          placeholder="Digitar Pesquisa"
-        />
-        <button>Pesquisar</button>
+      <div className="mainContainer">
+        <section>
+          <Link to={"/"}>
+            <HeaderHouseStyled />
+          </Link>
+        </section>
+        <div>
+          <input type="text" placeholder="Digitar Pesquisa" />
+          <button>Pesquisar</button>
+        </div>
       </div>
-    </div>
-  </HeaderStyled>
-  )
-}
+    </HeaderStyled>
+  );
+};
 
-export default Header
+export default Header;

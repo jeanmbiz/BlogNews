@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import CommentsPage from "../Pages/CommentsPage";
-import MainPage from "../Pages/MainPage";
+import MainPage from "../Pages/HomePage";
 import UserPage from "../Pages/UserPage";
 
 const RoutesMain = () => {

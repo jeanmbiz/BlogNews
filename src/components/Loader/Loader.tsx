@@ -1,12 +1,11 @@
-import { IconLoader, LoaderStyled } from "./styles"
-
+import { IconLoader, LoaderStyled } from "./styles";
 
 const Loader = () => {
   return (
     <LoaderStyled>
-      <IconLoader/>
+      <IconLoader />
     </LoaderStyled>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;

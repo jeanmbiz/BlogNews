@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import { FaUserCircle } from "react-icons/fa";
 import { MdLocalPostOffice } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const MainCommentStyled = styled.main`
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: var(--color-white);
-    padding-top: 20px;
-    height: 100%;
-`
-
-
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  padding-top: 20px;
+  height: 100%;
+`;
 
 export const SectionStyled = styled.section`
   article {
@@ -48,7 +47,7 @@ export const SectionStyled = styled.section`
     }
 
     div:nth-of-type(2) {
-      font-size: .7rem;
+      font-size: 0.7rem;
       font-weight: 700;
       color: var(--color-sucess);
       margin: 20px 0;
@@ -60,16 +59,13 @@ export const SectionStyled = styled.section`
 
 export const CommentCardStyled = styled.div`
   border: 5px solid var(--color-grey-20);
+  padding: 5px;
 
   span {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
-  }
-
-  a {
-    color: var(--color-grey-50);
   }
 
   h4 {
@@ -85,4 +81,16 @@ export const PostIcon = styled(MdLocalPostOffice)`
 export const UserIcon = styled(FaUserCircle)`
   width: 30px;
   height: 30px;
+`;
+
+export const LinkUser = styled(Link)`
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 1.3rem;
+`;
+
+export const LinkComments = styled(Link)`
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-link);
 `;
