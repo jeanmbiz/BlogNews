@@ -33,12 +33,12 @@ export interface iAdressUser {
   suite: string;
   city: string;
   zipcode: string;
-  geo: iGeoUser[];
+  geo: iGeoUser;
 }
 
 export interface iGeoUser {
-  lat: string;
-  lng: string;
+  lat: number | undefined;
+  lng: number | undefined;
 }
 
 export interface iCompany {

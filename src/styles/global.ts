@@ -81,5 +81,10 @@ export default createGlobalStyle`
     padding: 0.8rem;
   }
 
+  .leaflet {
+  height: 300px;
+  width: 95%;
+}
+
 
 `;

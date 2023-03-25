@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { iUser } from "../../interfaces/Interfaces";
 import Loader from "../Loader/Loader";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const User = () => {
   const { id } = useParams();
@@ -19,6 +20,8 @@ const User = () => {
       })
       .catch((err) => console.log(err));
   }, [id]);
+
+  console.log(user?.address.geo.lat);
 
   return (
     <MainUserStyled>
@@ -51,7 +54,24 @@ const User = () => {
             </h3>
           </aside>
           <div>
-            <h6>MAPA DA LOCALIZAÇÃO GEOGRÁFICA DO USUÁRIO</h6>
+            <MapContainer
+              center={[user?.address.geo.lat!, user?.address.geo.lng!]}
+              zoom={13}
+              scrollWheelZoom={false}
+              className="leaflet"
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker
+                position={[user?.address.geo.lat!, user?.address.geo.lng!]}
+              >
+                <Popup>
+                  A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
         </>
       )}
