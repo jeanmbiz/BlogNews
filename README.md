@@ -5,6 +5,6 @@
 
     - Instalar Pacotes
     $ yarn
-    
+
     - Iniciar Aplicação
     $ yarn start

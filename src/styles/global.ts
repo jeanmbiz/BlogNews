@@ -2,7 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
-    --color-primary: #FD377E;
+    --color-primary: #2180a7;
+    --link-color: #247fa3;
+    --link-color-hover: #14739A;
     --color-primary-2: #E34981;
   
     --color-secondary: #03B898;    

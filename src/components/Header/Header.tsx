@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HeaderHouseStyled, HeaderStyled } from "./styles";
 
+
 const Header = () => {
   return (
     <HeaderStyled>
@@ -11,8 +12,8 @@ const Header = () => {
           </Link>
         </section>
         <div>
-          <input type="text" placeholder="Digitar Pesquisa" />
-          <button>Pesquisar</button>
+          <h1>Blog</h1>
+          <h2>News</h2>
         </div>
       </div>
     </HeaderStyled>

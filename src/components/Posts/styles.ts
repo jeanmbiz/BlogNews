@@ -1,97 +1,135 @@
 import styled from "styled-components";
-import { MdPostAdd } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-export const PostIConStyled = styled(MdPostAdd)`
-  color: var(--color-grey-100);
-  font-size: 2rem;
-
-  @media screen and (min-width: 560px) {
-    font-size: 3rem;
-  }
-`;
-
-export const MainStyled = styled.main`
-  background-color: var(--color-white);
+export const PostStyled = styled.main`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  background-color: var(--color-white);
+
   height: 100%;
 
-  section {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  @media screen and (min-width: 560px) {
-  }
-`;
-
-export const CardPost = styled.article`
-  border: 3px solid var(--color-grey-100);
-  border-radius: 10px;
+  // mudar dps ao ficar maior
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  min-height: 130px;
-  padding: 5px;
+
+  gap: 5px;
+
+  section {
+    max-width: 300px;
+    height: 350px;
+    padding: 20px 20px;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  h2 {
+    position: absolute;
+    top: 85%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 0.6rem;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    max-width: 100%;
+    margin: 0;
+    font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue",
+      sans-serif;
+    font-size: 26px;
+    line-height: 33px;
+    color: var(--headings-color);
+    transition: color 0.2s ease-in-out;
+  }
 
   div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  summary {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 5px;
-  }
-
-  #name {
-    font-size: 1rem;
-    color: var(--color-secondary);
-    background-color: transparent;
-    border: none;
-    width: 130px;
-    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
   }
 
   h3 {
-    font-size: 0.8rem;
-    line-height: 14px;
-  }
-  h4 {
-    display: none;
-  }
-  #comment {
-    font-size: 0.8rem;
+    clear: none;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-bottom: 0;
     color: var(--color-grey-50);
-    background-color: transparent;
-    border: none;
-    width: 180px;
-    padding: 0;
   }
 
-  @media screen and (min-width: 560px) {
-    margin: 0px 50px;
+  h4 {
+    clear: none;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    color: var(--color-link);
+  }
 
-    h2 {
-      font-size: 1.3rem;
+  @media screen and (min-width: 640px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+`;
+
+export const LinkStyled = styled(Link)`
+  text-decoration: none;
+  max-width: 100%;
+  margin: 0;
+  font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: 26px;
+  line-height: 33px;
+  color: var(--headings-color);
+  transition: color 0.2s ease-in-out;
+
+  :hover{
+    figure{
+      filter: brightness(0.9);
     }
-    h3 {
-      font-size: 1rem;
-      line-height: 20px;
+    h2{
+      background-color: var(--link-color-hover);
     }
-    h4 {
-      display: inline-block;
-      font-size: 0.8;
-      line-height: 18px;
+    h1{
+      color: var(--link-color-hover);
     }
-    h5 {
-      font-size: 0.8rem;
-    }
+  }
+`;
+
+export const LinkUserStyled = styled(Link)`
+  clear: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: var(--color-link);
+  text-decoration: none;
+
+  :hover{
+    color: red;
   }
 `;
