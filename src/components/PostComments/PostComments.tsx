@@ -13,7 +13,6 @@ import {
   UserIcon,
 } from "./styles";
 
-
 const PostComments = () => {
   const { id } = useParams();
   const [postCommentsById, setPostCommentsById] = useState<iPost>();

@@ -55,6 +55,7 @@ export const PostStyled = styled.main`
     line-height: 33px;
     color: var(--headings-color);
     transition: color 0.2s ease-in-out;
+    margin-left: 10px;
   }
 
   div {
@@ -62,6 +63,7 @@ export const PostStyled = styled.main`
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    margin-left: 10px;
   }
 
   h3 {
@@ -87,9 +89,7 @@ export const PostStyled = styled.main`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-
-}
+  }
 `;
 
 export const LinkStyled = styled(Link)`
@@ -103,14 +103,14 @@ export const LinkStyled = styled(Link)`
   color: var(--headings-color);
   transition: color 0.2s ease-in-out;
 
-  :hover{
-    figure{
+  :hover {
+    figure {
       filter: brightness(0.9);
     }
-    h2{
+    h2 {
       background-color: var(--link-color-hover);
     }
-    h1{
+    h1 {
       color: var(--link-color-hover);
     }
   }
@@ -126,7 +126,7 @@ export const LinkUserStyled = styled(Link)`
   color: var(--color-link);
   text-decoration: none;
 
-  :hover{
+  :hover {
     color: red;
   }
 `;

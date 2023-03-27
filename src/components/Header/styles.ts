@@ -32,7 +32,7 @@ export const HeaderStyled = styled.header`
     display: flex;
     flex-direction: row;
     gap: 1px;
-    padding: 10px;
+    margin-right: 20px;
   }
 
   h1,
@@ -45,20 +45,4 @@ export const HeaderStyled = styled.header`
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
   }
-
-  /* @media screen and (max-width: 560px) {
-    .mainContainer {
-      flex-direction: column;
-    }
-
-    div {
-      max-width: 300px;
-    }
-
-    div button {
-      max-width: 94px;
-      padding: 0px;
-      background-color: azure;
-    }
-  } */
 `;

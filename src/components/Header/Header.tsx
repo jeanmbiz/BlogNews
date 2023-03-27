@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { HeaderHouseStyled, HeaderStyled } from "./styles";
 
-
 const Header = () => {
   return (
     <HeaderStyled>

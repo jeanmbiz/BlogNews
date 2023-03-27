@@ -1,10 +1,25 @@
-## Execução do Código:
+# Projeto Blog / Alkabot
 
-    - Clonar Repositório
+#### Este projeto trata-se do front-end para um blog desenvolvido em React + TypeScrtipt. A API Restful foi disponibilizada pela empresa.
+
+## Como utilizar
+
+#### 1. Clone o repositório para sua máquina local:
+
+```
     $ git clone git@github.com:jeanmbiz/blog.git
+```
 
-    - Instalar Pacotes
+#### 2. Instale as dependências utilizando o seguinte comando:
+
+```
     $ yarn
+```
 
-    - Iniciar Aplicação
+#### 3. Rode o projeto utilizando o seguinte comando:
+
+```
     $ yarn start
+```
+
+#### 4. O projeto será executado em http://localhost:3000/

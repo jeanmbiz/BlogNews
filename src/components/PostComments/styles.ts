@@ -87,7 +87,7 @@ export const LinkUser = styled(Link)`
   color: var(--color-link);
   text-decoration: none;
   font-size: 1.3rem;
-  :hover{
+  :hover {
     color: red;
   }
 `;
@@ -96,7 +96,7 @@ export const LinkComments = styled(Link)`
   text-decoration: none;
   font-size: 1rem;
   color: var(--color-link);
-  :hover{
+  :hover {
     color: red;
   }
 `;
