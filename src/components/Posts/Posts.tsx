@@ -7,6 +7,7 @@ import PostContext from "../../Providers/Context/PostContext";
 const Posts = () => {
   const { postList } = useContext(PostContext);
 
+  
   return (
     <PostStyled>
       {postList.map((post) => (
