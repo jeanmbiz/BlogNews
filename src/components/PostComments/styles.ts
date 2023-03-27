@@ -25,7 +25,7 @@ export const SectionStyled = styled.section`
     h2 {
       color: var(--color-grey-50);
       font-weight: 400;
-      font-size: 19px;
+      font-size: 1.18rem;
       margin: 15px 0 20px;
       line-height: 30px;
       font-style: normal;

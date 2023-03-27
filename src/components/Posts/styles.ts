@@ -51,7 +51,7 @@ export const PostStyled = styled.main`
     font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Segoe UI",
       "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue",
       sans-serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 33px;
     color: var(--headings-color);
     transition: color 0.2s ease-in-out;
@@ -98,7 +98,7 @@ export const LinkStyled = styled(Link)`
   margin: 0;
   font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 33px;
   color: var(--headings-color);
   transition: color 0.2s ease-in-out;

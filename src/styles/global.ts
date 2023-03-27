@@ -5,9 +5,7 @@ export default createGlobalStyle`
     --color-primary: #2180a7;
     --link-color: #247fa3;
     --link-color-hover: #14739A;
-    --color-primary-2: #E34981;
-  
-    --color-secondary: #03B898;    
+    
     --color-link: #120a8f;;
 
     --color-grey-100: #333333;
@@ -16,10 +14,6 @@ export default createGlobalStyle`
     --color-grey-0: #F5F5F5;
 
     --color-white: #FFFFFF;
-
-    --color-negative: #E60000;
-    --color-warning: #FFCD07; 
-    --color-sucess: #168821;
   }
   
   * {
