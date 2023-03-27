@@ -6,14 +6,10 @@ export const PostStyled = styled.main`
   max-width: 1000px;
   margin: 0 auto;
   background-color: var(--color-white);
-
   height: 100%;
-
-  // mudar dps ao ficar maior
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 5px;
 
   section {
@@ -37,8 +33,8 @@ export const PostStyled = styled.main`
 
   h2 {
     position: absolute;
-    top: 85%;
-    left: 9%;
+    top: 82%;
+    left: 13%;
     transform: translate(-50%, -50%);
     z-index: 1;
 
@@ -73,7 +69,7 @@ export const PostStyled = styled.main`
     font-family: "Inter";
     font-weight: 400;
     font-size: 0.7rem;
-    margin-bottom: 0;
+    margin-top: 5px;
     color: var(--color-grey-50);
   }
 
@@ -122,8 +118,9 @@ export const LinkStyled = styled(Link)`
 
 export const LinkUserStyled = styled(Link)`
   clear: none;
-  font-family: "Inter";
-  font-weight: 400;
+  font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   font-size: 0.8rem;
   margin-bottom: 0;
   color: var(--color-link);

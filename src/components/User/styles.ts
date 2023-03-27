@@ -75,14 +75,13 @@ export const UserNewIcon = styled(FaUserCircle)`
   width: 10rem;
   height: 10rem;
   color: var(--color-grey-50);
-  
 `;
 
 export const URLIcon = styled(TbWorldWww)`
   width: 2rem;
   height: 2rem;
   color: var(--link-color);
-  :hover{
+  :hover {
     color: red;
   }
 `;
@@ -91,7 +90,7 @@ export const EmailIcon = styled(MdEmail)`
   width: 2rem;
   height: 2rem;
   color: var(--link-color);
-  :hover{
+  :hover {
     color: red;
   }
 `;
