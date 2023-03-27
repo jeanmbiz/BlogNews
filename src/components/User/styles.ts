@@ -11,6 +11,7 @@ export const MainUserStyled = styled.main`
   background-color: var(--color-white);
   padding-top: 20px;
 
+
   
   figure {
     display: flex;
