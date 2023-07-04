@@ -23,9 +23,9 @@ const PostComments = () => {
       .get(`posts/${id}?_embed=comments&_expand=user`)
       .then((res) => {
         setPostCommentsById(res.data);
-        setloading(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+      .finally(() => setloading(false));
   }, [id]);
 
   return (

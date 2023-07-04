@@ -10,9 +10,11 @@ export const HeaderHouseStyled = styled(BsFillHouseDoorFill)`
   padding: 5px;
   height: 60px;
 
+
   :hover {
     color: var(--color-primary);
     background-color: white;
+
   }
 `;
 
